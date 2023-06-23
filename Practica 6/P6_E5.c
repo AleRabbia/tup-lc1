@@ -21,14 +21,14 @@ int sumarDigitos(int numero)
 {
     int suma = 0;
 
-    // Obtener el valor absoluto del número (para tratar números negativos)
+    //valor absoluto del número para tambien calcular los negativos números negativos
     numero = abs(numero);
 
-    // Sumar los dígitos del número
+    // suma los dígitos del número
     while (numero > 0)
     {
-        suma += numero % 10; // Obtener el último dígito y sumarlo a la suma total
-        numero /= 10;        // Eliminar el último dígito del número
+        suma += numero % 10; // obtener el último dígito y sumarlo a la suma total
+        numero /= 10;        // eliminar el último dígito del número
     }
 
     return suma;
