@@ -7,7 +7,7 @@
 
 char Primera_letra(char *cadena)
 {
-    return *cadena;
+    return cadena[0];
 }
 
 void main()
